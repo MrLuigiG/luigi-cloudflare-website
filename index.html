@@ -1,5 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>My Cloudflare Test Site</title></head>
-<body><h1>Hello from Cloudflare Test!</h1></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudflare Test Site</title>
+  <style>
+    :root {
+      --cloudflare-orange: #f38020;
+      --bg-light: #f7f7f7;
+      --text-dark: #222;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffffff, #f7f7f7);
+      color: var(--text-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: var(--cloudflare-orange);
+      font-size: 2.5em;
+      margin-bottom: 0.4em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    .footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    a {
+      color: var(--cloudflare-orange);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Cloudflare Demo</h1>
+    <p>This page is deployed on GitHub Pages and protected by Cloudflare.</p>
+    <p>Follow along as we secure and optimize this domain step by step.</p>
+    <div class="footer">
+      Built with ❤️ for the Cloudflare Solutions Engineering take-home test.<br/>
+      <a href="https://mrluigig.github.io/luigi-cloudflare-website/">Visit Live</a>
+    </div>
+  </div>
+</body>
 </html>
